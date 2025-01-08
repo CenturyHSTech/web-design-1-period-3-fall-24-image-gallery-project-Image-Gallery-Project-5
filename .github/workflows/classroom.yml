@@ -57,5 +57,6 @@ jobs:
       env:
         TEST-HTML_RESULTS: "${{steps.test-html.outputs.result}}"
         TEST-CSS_RESULTS: "${{steps.test-css.outputs.result}}"
+        TEST-Exceeds_RESULTS: "${{steps.test-exceeds.outputs.result}}"
       with:
-        runners: test-html,test-css
+        runners: test-html,test-css,test-exceeds
